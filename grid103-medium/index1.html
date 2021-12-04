@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blogContainer {
+            display: grid;
+            
+            grid-template-columns: 100% 75% 25% 100%
+            /* grid-template-rows: repeat(3) */
+        }
+        .header {
+            background-color: cadetblue;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .main {
+            background-color: darkgoldenrod;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .aside {
+            background-color: darkolivegreen;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+
+        .footer {
+            background-color: cadetblue;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="blogContainer">
+        <div class="header">header</div>
+        <div class="main">main</div>
+        <div class="aside">aside</div>
+        <div class="footer">footer</div>
+    </div>
+    
+</body>

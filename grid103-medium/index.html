@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blogContainer {
+            display: grid;
+            width: 800px;
+            margin: 0 auto;
+            grid-template-columns: auto auto auto auto
+            /* grid-template-columns: 200px 200px 200px 200px */
+            /* grid-template-columns: repeat(4) */
+        }
+        .header {
+            background-color: cadetblue;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .header li {
+            display: inline;
+            padding: 5px;
+        }
+
+        .main {
+            background-color: rgba(184, 135, 11, 0.338);
+            grid-column-start: 1;
+            grid-column-end: 4;
+            padding: 20px;
+
+        }
+
+        .aside {
+            background-color: rgba(85, 107, 47, 0.392);
+            grid-column-start: 4;
+            grid-column-end: 5;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: cadetblue;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="blogContainer">
+        <div class="header">
+            <h1>header</h1>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2>main</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt optio, blanditiis tempora sed dolorem, debitis commodi distinctio laborum ratione neque asperiores consequuntur quas fugiat dolor impedit, voluptate laboriosam vero veniam!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt optio, blanditiis tempora sed dolorem, debitis commodi distinctio laborum ratione neque asperiores consequuntur quas fugiat dolor impedit, voluptate laboriosam vero veniam!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt optio, blanditiis tempora sed dolorem, debitis commodi distinctio laborum ratione neque asperiores consequuntur quas fugiat dolor impedit, voluptate laboriosam vero veniam!
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt optio, blanditiis tempora sed dolorem, debitis commodi distinctio laborum ratione neque asperiores consequuntur quas fugiat dolor impedit, voluptate laboriosam vero veniam!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt optio, blanditiis tempora sed dolorem, debitis commodi distinctio laborum ratione neque asperiores consequuntur quas fugiat dolor impedit, voluptate laboriosam vero veniam!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt optio, blanditiis tempora sed dolorem, debitis commodi distinctio laborum ratione neque asperiores consequuntur quas fugiat dolor impedit, voluptate laboriosam vero veniam!
+            </p>
+            </div>
+        <div class="aside">
+            <h2>aside</h2> 
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+    
+</body>
+</html>

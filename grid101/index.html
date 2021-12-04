@@ -6,21 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
+        /* body {
             margin: 0;
-        }
+        } */
         .grid-container {
+    
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-template-columns: 80px 200px auto 40px; */
+            /* this will have the third column fill the remaining space */
             padding: 10px;
-            background-color: goldenrod;
+            background-color: rgba(218, 165, 32, 0.276);
+            column-gap: 50px;
+            row-gap: 50px;
         }
+        .grid-item {
+            background-color: rgba(255, 105, 180, 0.728);
+            border: solid 1px black;
+            text-align: center;
+            padding: 15px;
+            /* margin: 10px; */
+        }
+        /* the precedence is in linear order- whatever is last will apply unless inherited */
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgba(137, 43, 226, 0.303);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1);
+            /*  */
+        }
+        .grid-item-1 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: aquamarine
+            
+                }
+        .grid-item-2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-color: burlywood;
+        }
+        
     </style>
 </head>
 <body>
     <h1>CSS Grid</h1>
     <div class="grid-container">
-        <div class="grid-item">1</div>
+        <div class="grid-item ">1</div>
         <div class="grid-item">2</div>
         <div class="grid-item">3</div>
         <div class="grid-item">4</div>
@@ -29,6 +68,16 @@
         <div class="grid-item">7</div>
         <div class="grid-item">8</div>
         <div class="grid-item">9</div>
+    </div>
+    <br>
+    <!-- you can also use hr for a hairline -->
+    <h2>my 2nd grid</h2>
+    <div class="grid">
+        <div class="grid-item-1">Grid Item 1</div>
+        <div class="grid-item-2">Grid Item 2</div>
+        <div>Three</div>
+        <div>Four</div>
+
     </div>
 </body>
 </html>
